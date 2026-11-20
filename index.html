@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>House &amp; Reggaeton Night – 7 dicembre 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0b0b0f; --fg:#f4f4f4; --pink:#8a3dff; --orange:#c6ff00; --card:#17121f; --dot:#8a3dff;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: light){
+  :root:not([data-theme="dark"]){--bg:#f5ffd1; --fg:#160a26; --pink:#6a1fe0; --orange:#4f7d00; --card:#e4fb9a; --dot:#6a1fe0;}
+}
+:root[data-theme="light"]{--bg:#f5ffd1; --fg:#160a26; --pink:#6a1fe0; --orange:#4f7d00; --card:#e4fb9a; --dot:#6a1fe0;}
+:root[data-theme="dark"]{--bg:#0b0b0f; --fg:#f4f4f4; --pink:#8a3dff; --orange:#c6ff00; --card:#17121f; --dot:#8a3dff;}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:'Space Grotesk',system-ui,sans-serif;overflow-x:hidden}
+.dots{background-image:radial-gradient(circle,var(--dot) 28%,transparent 30%);background-size:14px 14px}
+.hero{position:relative;padding:56px 22px 48px;min-height:92vh;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle,var(--dot) 30%,transparent 33%);background-size:16px 16px;
+  -webkit-mask-image:radial-gradient(circle at 80% 15%,#000 0,transparent 62%);mask-image:radial-gradient(circle at 80% 15%,#000 0,transparent 62%)}
+.hero::after{content:"";position:absolute;inset:0;background-image:radial-gradient(circle,var(--orange) 24%,transparent 27%);background-size:10px 10px;opacity:.9;
+  -webkit-mask-image:radial-gradient(circle at 0% 100%,#000 0,transparent 55%);mask-image:radial-gradient(circle at 0% 100%,#000 0,transparent 55%)}
+.hero>*{position:relative;z-index:2}
+.tag{display:inline-block;align-self:flex-start;background:var(--fg);color:var(--bg);font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:6px 12px;font-size:.78rem}
+h1{font-family:Anton,Impact,sans-serif;font-weight:400;text-transform:uppercase;line-height:.92;margin:18px 0 10px;font-size:clamp(3.4rem,17vw,8rem)}
+h1 span{color:var(--pink);display:block}
+.date{font-family:Anton,Impact,sans-serif;font-size:clamp(1.8rem,8vw,3.4rem);color:var(--orange);text-transform:uppercase}
+.where{font-weight:700;letter-spacing:.05em;text-transform:uppercase}
+section{padding:44px 22px;max-width:880px;margin:0 auto}
+h2{font-family:Anton,Impact,sans-serif;font-weight:400;text-transform:uppercase;font-size:2.2rem;margin:0 0 20px;letter-spacing:.02em}
+h2::after{content:"";display:block;width:64px;height:10px;margin-top:8px;background-image:radial-gradient(circle,var(--pink) 35%,transparent 38%);background-size:10px 10px}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
+.card{background:var(--card);border:3px solid var(--fg);padding:20px;box-shadow:6px 6px 0 var(--pink)}
+.card b{display:block;font-family:Anton,Impact,sans-serif;font-weight:400;font-size:1.6rem;text-transform:uppercase;color:var(--orange)}
+.card p{margin:6px 0 0}
+.lineup{list-style:none;margin:0;padding:0}
+.lineup li{font-family:Anton,Impact,sans-serif;text-transform:uppercase;font-size:clamp(2rem,10vw,3.6rem);line-height:1.15;border-bottom:3px solid var(--fg);padding:10px 0;display:flex;align-items:baseline;gap:14px}
+.lineup li i{font-style:normal;font-family:'Space Grotesk',sans-serif;font-size:.9rem;color:var(--pink);font-weight:700}
+.qrwrap{display:flex;flex-wrap:wrap;gap:22px;align-items:center}
+#qr{background:#fff;padding:14px;border:3px solid var(--fg);box-shadow:6px 6px 0 var(--orange);display:inline-block;line-height:0}
+#qr img,#qr canvas{max-width:100%;height:auto}
+footer{padding:30px 22px 40px;text-align:center;font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:.8rem;position:relative}
+footer::before{content:"";display:block;height:50px;margin:0 -22px 24px;background-image:radial-gradient(circle,var(--dot) 30%,transparent 33%);background-size:12px 12px;-webkit-mask-image:linear-gradient(#000,transparent);mask-image:linear-gradient(#000,transparent)}
+.hero>.bat{position:absolute;top:calc(28px + env(safe-area-inset-top,0px));right:22px;width:clamp(100px,30vw,180px);color:var(--orange)}
+.batmini{width:56px;color:var(--orange);display:block;margin:0 auto 10px}
+.big{font-family:Anton,Impact,sans-serif;text-transform:uppercase;line-height:.9;margin:0 0 26px}
+.big span{display:block}
+.big .d{color:var(--orange);font-size:clamp(5.5rem,30vw,12rem)}
+.big .t{color:transparent;-webkit-text-stroke:2px var(--fg);font-size:clamp(4rem,22vw,8.5rem)}
+.big .n{color:var(--pink);font-size:clamp(2.6rem,14vw,5.4rem)}
+.grid{position:relative;display:block;padding:24px 14px}
+.grid::before,.grid::after{content:"";position:absolute;width:24px;height:24px;border:3px solid var(--orange)}
+.grid::before{top:0;left:0;border-right:0;border-bottom:0}
+.grid::after{bottom:0;right:0;border-left:0;border-top:0}
+.card{display:flex;justify-content:space-between;align-items:center;gap:14px;background:var(--card);border:0;border-left:4px solid var(--pink);box-shadow:none;padding:12px 14px;margin-bottom:8px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.card b{font-family:inherit;font-weight:400;font-size:.8rem;letter-spacing:.1em;text-transform:lowercase;color:var(--pink)}
+.card b::before{content:"> "}
+.card p{margin:0;font-family:inherit;font-size:clamp(.95rem,4.2vw,1.2rem);font-weight:700;text-align:right;line-height:1.2;color:var(--orange)}
+.bars{display:inline-block;width:52px;height:10px;margin-right:8px;background:repeating-linear-gradient(90deg,var(--orange) 0 8px,transparent 8px 12px)}
+.hd{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.8rem;letter-spacing:.12em;color:var(--pink);margin-bottom:14px}
+.links{display:grid;gap:10px}
+.links a{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px 12px;padding:16px 18px;background:var(--orange);color:var(--bg);text-decoration:none}
+.links a:nth-child(even){background:var(--pink);color:#fff}
+.links a span{font-family:Anton,Impact,sans-serif;font-size:1.6rem;text-transform:uppercase}
+.links a i{font-style:normal;font-weight:700;font-size:.9rem;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.links a:hover{transform:translate(-2px,-2px);box-shadow:4px 4px 0 var(--fg)}
+.card p small{display:block;margin-top:4px;font-size:.7em;font-weight:400;letter-spacing:.04em;opacity:.85}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="bat" viewBox="0 0 100 60"><path fill="currentColor" d="M50 10L54 3L57 12C66 8 80 10 98 22C90 24 86 30 85 38C80 32 74 32 71 40C66 34 60 36 57 46L50 58L43 46C40 36 34 34 29 40C26 32 20 32 15 38C14 30 10 24 2 22C20 10 34 8 43 12L46 3Z"/><circle cx="47" cy="17" r="1.6" fill="var(--bg)"/><circle cx="53" cy="17" r="1.6" fill="var(--bg)"/></symbol></svg>
+<header class="hero">
+  <svg class="bat" viewBox="0 0 100 60" role="img" aria-label="Pipistrello"><use href="#bat"/></svg>
+  <span class="tag">Una notte • Ingresso con free bar</span>
+  <h1>House <span>&amp; Reggaeton</span> Night</h1>
+  <div class="date">7 dicembre 2026</div>
+  <div class="where">22:30 – till late • Giugliano • Napoli</div>
+</header>
+
+<section>
+  <h2>La serata</h2>
+  <p class="big"><span class="d">7.12</span><span class="t">22:30</span><span class="n">All night</span></p>
+  <div class="grid">
+    <div class="hd">// info serata</div>
+    <div class="card"><b>Musica</b><p>House &amp; reggaeton</p></div>
+    <div class="card"><b>DJ set</b><p><span class="bars"></span>All night</p></div>
+    <div class="card"><b>Free bar</b><p><span class="bars"></span>All night</p></div>
+    <div class="card"><b>Dove</b><p>Giugliano, Napoli<small>location svelata 24h prima</small></p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Line-up</h2>
+  <ul class="lineup">
+    <li>Michele Maisto <i>DJ</i></li>
+    <li>Skala <i>DJ</i></li>
+    <li>Mattia Felace <i>DJ</i></li>
+  </ul>
+</section>
+
+<section id="qrsec">
+  <h2>Condividi e vinci il pass</h2>
+  <div class="qrwrap">
+    <div id="qr" aria-label="QR code della pagina"></div>
+    <p style="max-width:300px;margin:0">Condividi con i tuoi amici e aggiudicati il pass! Inquadra il QR code e porta la serata a chi vuoi.</p>
+  </div>
+</section>
+
+<section id="contatti">
+  <h2>Contatti</h2>
+  <div class="links">
+    <a href="https://wa.me/393510750746" target="_blank" rel="noopener"><span>WhatsApp (Gio)</span><i>+39 351 0750746 ↗</i></a>
+    <a href="https://wa.me/393206039283" target="_blank" rel="noopener"><span>WhatsApp (Cre)</span><i>+39 320 6039283 ↗</i></a>
+    <a href="https://www.instagram.com/crescenzomallardoo" target="_blank" rel="noopener"><span>Instagram</span><i>@crescenzomallardoo ↗</i></a>
+    <a href="https://www.instagram.com/giovannifelaco__" target="_blank" rel="noopener"><span>Instagram</span><i>@giovannifelaco__ ↗</i></a>
+  </div>
+</section>
+
+<footer><svg class="batmini" viewBox="0 0 100 60" aria-hidden="true"><use href="#bat"/></svg>7.12.2026 • House &amp; Reggaeton • Giugliano</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+try{
+  var url=location.href.split('#')[0];
+  new QRCode(document.getElementById('qr'),{text:url,width:200,height:200,colorDark:"#12091f",colorLight:"#ffffff",correctLevel:QRCode.CorrectLevel.M});
+}catch(e){
+  var s=document.getElementById('qrsec'); if(s) s.style.display='none';
+}
+</script>
+</body>
+</html>
